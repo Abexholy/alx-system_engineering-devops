@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
+# Displays "Best School" using a while loop
+#   On the 9th iteration, This will displays "Hi" before "Best School".
 
 count=0
 
