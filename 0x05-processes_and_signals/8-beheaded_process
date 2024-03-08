@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+#This is a script that kills a process id
+pgrep -f 7-highlander | xargs kill -9
