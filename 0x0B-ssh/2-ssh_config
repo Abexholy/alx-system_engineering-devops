@@ -1,6 +1,8 @@
-
-# ssh config file
+# SSH config file for the local SSH client
 Host *
-      PasswordAuthentication no
-      IdentifyFile ~/.ssh/school
-
+   IdentityFile ~/.ssh/school
+   PasswordAuthentication no
+   PreferredAuthentications publickey
+   SendEnv LANG LC_*
+   HashKnownHosts yes
+   GSSAPIAuthentication yes
