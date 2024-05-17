@@ -34,14 +34,14 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend esther-tech-frontend
+frontend abex-tech-frontend
     bind *:80
-    default_backend esther-tech-backend
+    default_backend abex-tech-backend
 
-backend esther-tech-backend
+backend abex-tech-backend
     balance roundrobin
-    server 317979-web-01 52.207.178.204:80 check
-    server 317979-web-02 100.27.2.100:80 check
+    server 354414-web-01 54.82.176.252:80 check
+    server 354414-web-02 54.90.48.71:80 check
 "
 
 # shellcheck disable=SC2154
